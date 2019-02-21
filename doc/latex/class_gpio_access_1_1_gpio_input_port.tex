@@ -1,0 +1,98 @@
+\hypertarget{class_gpio_access_1_1_gpio_input_port}{\section{\-Gpio\-Access\-:\-:\-Gpio\-Input\-Port \-Class \-Reference}
+\label{class_gpio_access_1_1_gpio_input_port}\index{\-Gpio\-Access\-::\-Gpio\-Input\-Port@{\-Gpio\-Access\-::\-Gpio\-Input\-Port}}
+}
+
+
+{\ttfamily \#include $<$\-Gpio\-Input\-Port.\-h$>$}
+
+\-Inheritance diagram for \-Gpio\-Access\-:\-:\-Gpio\-Input\-Port\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gpio_access_1_1_gpio_input_port}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gpio_access_1_1_gpio_input_port_aeeed64420582ca1ebc2d741e140b67b9}{\-Gpio\-Input\-Port} (int $\ast$bits\-Ids, int \hyperlink{class_gpio_access_1_1_gpio_port_a7708b465b3c98a32e592ee985c3dcf8b}{bit\-Count}, bool pull\-Up=true)
+\item 
+unsigned int \hyperlink{class_gpio_access_1_1_gpio_input_port_aeed5b1a3eccb39dd6cff6f2e281a890b}{read} ()
+\item 
+\hypertarget{class_gpio_access_1_1_gpio_input_port_abda439bc45285d6cac9776ab8b61a978}{bool {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int pos)}\label{class_gpio_access_1_1_gpio_input_port_abda439bc45285d6cac9776ab8b61a978}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gpio_access_1_1_gpio_input_pin}{\-Gpio\-Access\-::\-Gpio\-Input\-Pin} $\ast$ \hyperlink{class_gpio_access_1_1_gpio_input_port_a4817dfd3065aebdb9d9231f54bff8ba5}{input\-Bits}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_gpio_access_1_1_gpio_input_port}{\-Gpio\-Input\-Port} es la clase que define las funcionalidades de un bus de entrada. 
+
+\-Definition at line 21 of file \-Gpio\-Input\-Port.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_input_port_aeeed64420582ca1ebc2d741e140b67b9}{\index{\-Gpio\-Access\-::\-Gpio\-Input\-Port@{\-Gpio\-Access\-::\-Gpio\-Input\-Port}!\-Gpio\-Input\-Port@{\-Gpio\-Input\-Port}}
+\index{\-Gpio\-Input\-Port@{\-Gpio\-Input\-Port}!GpioAccess::GpioInputPort@{\-Gpio\-Access\-::\-Gpio\-Input\-Port}}
+\subsubsection[{\-Gpio\-Input\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Gpio\-Access\-::\-Gpio\-Input\-Port\-::\-Gpio\-Input\-Port} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{bits\-Ids, }
+\item[{int}]{bit\-Count, }
+\item[{bool}]{pull\-Up = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_gpio_access_1_1_gpio_input_port_aeeed64420582ca1ebc2d741e140b67b9}
+\-Constructor de \hyperlink{class_gpio_access_1_1_gpio_input_port}{\-Gpio\-Input\-Port}. 
+\begin{DoxyParams}{\-Parameters}
+{\em bits\-Ids} & es un arreglo de enteros los cuales corresponden con los identificadores de los puertos que conforman el bus de entrada. \\
+\hline
+{\em p\-Bit\-Count} & cantidad de bits del bus de entrada. \\
+\hline
+{\em pull\-Up} & valor booleano que define la configuracion del resistor pullup. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 8 of file \-Gpio\-Input\-Port.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_input_port_aeed5b1a3eccb39dd6cff6f2e281a890b}{\index{\-Gpio\-Access\-::\-Gpio\-Input\-Port@{\-Gpio\-Access\-::\-Gpio\-Input\-Port}!read@{read}}
+\index{read@{read}!GpioAccess::GpioInputPort@{\-Gpio\-Access\-::\-Gpio\-Input\-Port}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Gpio\-Access\-::\-Gpio\-Input\-Port\-::read} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gpio_access_1_1_gpio_input_port_aeed5b1a3eccb39dd6cff6f2e281a890b}
+\-La función read lee el valor presente en el bus. \begin{DoxyReturn}{\-Returns}
+\-Devuelve un valor entero positivo correspondiente a la lectura del bus de entrada. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em runtime\-\_\-error.} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\-Definition at line 20 of file \-Gpio\-Input\-Port.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_input_port_a4817dfd3065aebdb9d9231f54bff8ba5}{\index{\-Gpio\-Access\-::\-Gpio\-Input\-Port@{\-Gpio\-Access\-::\-Gpio\-Input\-Port}!input\-Bits@{input\-Bits}}
+\index{input\-Bits@{input\-Bits}!GpioAccess::GpioInputPort@{\-Gpio\-Access\-::\-Gpio\-Input\-Port}}
+\subsubsection[{input\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Gpio\-Access\-::\-Gpio\-Input\-Pin}$\ast$ {\bf \-Gpio\-Access\-::\-Gpio\-Input\-Port\-::input\-Bits}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_gpio_access_1_1_gpio_input_port_a4817dfd3065aebdb9d9231f54bff8ba5}
+input\-Bits es un arreglo donde se almacenan los puertos que componen el bus de entrada. 
+
+\-Definition at line 50 of file \-Gpio\-Input\-Port.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/access/\-Gpio\-Input\-Port.\-h\item 
+src/access/\-Gpio\-Input\-Port.\-cpp\end{DoxyCompactItemize}

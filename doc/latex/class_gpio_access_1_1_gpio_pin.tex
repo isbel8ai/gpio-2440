@@ -1,0 +1,133 @@
+\hypertarget{class_gpio_access_1_1_gpio_pin}{\section{\-Gpio\-Access\-:\-:\-Gpio\-Pin \-Class \-Reference}
+\label{class_gpio_access_1_1_gpio_pin}\index{\-Gpio\-Access\-::\-Gpio\-Pin@{\-Gpio\-Access\-::\-Gpio\-Pin}}
+}
+
+
+{\ttfamily \#include $<$\-Gpio\-Pin.\-h$>$}
+
+\-Inheritance diagram for \-Gpio\-Access\-:\-:\-Gpio\-Pin\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.728395cm]{class_gpio_access_1_1_gpio_pin}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gpio_access_1_1_gpio_pin_ad212b4623cd8e4f6dda1335774f54f2f}{\-Gpio\-Pin} (int p\-Gpio\-Id)
+\item 
+bool \hyperlink{class_gpio_access_1_1_gpio_pin_a91c4e6b319184b943ed6094d10056348}{read} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_gpio_access_1_1_gpio_pin_a407236169f0e60364db7618c12fe29e9}{ioctl\-Cmd} (unsigned int cmd, unsigned int value=0)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_gpio_access_1_1_gpio_pin_a662d9f6e22d338e0b182b3220a42f25d}{gpio\-Id}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_gpio_access_1_1_gpio_pin_aa3cfd18199fbe18a6d7d74a7a753dbab}{file} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_gpio_access_1_1_gpio_pin}{\-Gpio\-Pin} es la clase base para los puertos \-G\-P\-I\-O 
+
+\-Definition at line 13 of file \-Gpio\-Pin.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_pin_ad212b4623cd8e4f6dda1335774f54f2f}{\index{\-Gpio\-Access\-::\-Gpio\-Pin@{\-Gpio\-Access\-::\-Gpio\-Pin}!\-Gpio\-Pin@{\-Gpio\-Pin}}
+\index{\-Gpio\-Pin@{\-Gpio\-Pin}!GpioAccess::GpioPin@{\-Gpio\-Access\-::\-Gpio\-Pin}}
+\subsubsection[{\-Gpio\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Gpio\-Access\-::\-Gpio\-Pin\-::\-Gpio\-Pin} (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-Gpio\-Id}
+\end{DoxyParamCaption}
+)}}\label{class_gpio_access_1_1_gpio_pin_ad212b4623cd8e4f6dda1335774f54f2f}
+\-Constructor de \hyperlink{class_gpio_access_1_1_gpio_pin}{\-Gpio\-Pin}. 
+\begin{DoxyParams}{\-Parameters}
+{\em p\-Gpio\-Id} & es un entero que contiene el identificador del puerto a utilizar. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em runtime\-\_\-error.} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\-Definition at line 13 of file \-Gpio\-Pin.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_pin_a407236169f0e60364db7618c12fe29e9}{\index{\-Gpio\-Access\-::\-Gpio\-Pin@{\-Gpio\-Access\-::\-Gpio\-Pin}!ioctl\-Cmd@{ioctl\-Cmd}}
+\index{ioctl\-Cmd@{ioctl\-Cmd}!GpioAccess::GpioPin@{\-Gpio\-Access\-::\-Gpio\-Pin}}
+\subsubsection[{ioctl\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Gpio\-Access\-::\-Gpio\-Pin\-::ioctl\-Cmd} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{cmd, }
+\item[{unsigned int}]{value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_gpio_access_1_1_gpio_pin_a407236169f0e60364db7618c12fe29e9}
+\-La función ioctl\-Cmd es la encargada de hacer el llamado ioctl al driver. 
+\begin{DoxyParams}{\-Parameters}
+{\em cmd} & es un valor entero positivo que corresponde el comando a ejecutar. \\
+\hline
+{\em value} & es un valor entero positivo el cual va a utilizar el comando si es necesario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Devuelve el valor entero retornado por la ejecución del comando ioctl cmd. 
+\end{DoxyReturn}
+
+
+\-Definition at line 23 of file \-Gpio\-Pin.\-cpp.
+
+\hypertarget{class_gpio_access_1_1_gpio_pin_a91c4e6b319184b943ed6094d10056348}{\index{\-Gpio\-Access\-::\-Gpio\-Pin@{\-Gpio\-Access\-::\-Gpio\-Pin}!read@{read}}
+\index{read@{read}!GpioAccess::GpioPin@{\-Gpio\-Access\-::\-Gpio\-Pin}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Gpio\-Access\-::\-Gpio\-Pin\-::read} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gpio_access_1_1_gpio_pin_a91c4e6b319184b943ed6094d10056348}
+\-La función read lee el valor presente en un puerto. \begin{DoxyReturn}{\-Returns}
+\-Devuelve un valor booleano positivo correspondiente a la lectura del bus de entrada. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em runtime\-\_\-error.} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\-Definition at line 31 of file \-Gpio\-Pin.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_pin_aa3cfd18199fbe18a6d7d74a7a753dbab}{\index{\-Gpio\-Access\-::\-Gpio\-Pin@{\-Gpio\-Access\-::\-Gpio\-Pin}!file@{file}}
+\index{file@{file}!GpioAccess::GpioPin@{\-Gpio\-Access\-::\-Gpio\-Pin}}
+\subsubsection[{file}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Gpio\-Access\-::\-Gpio\-Pin\-::file} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_gpio_access_1_1_gpio_pin_aa3cfd18199fbe18a6d7d74a7a753dbab}
+file es un entero que elmacena del descriptor del fichero de acceso al driver gpio (en linux /dev/gpio2440). 
+
+\-Definition at line 54 of file \-Gpio\-Pin.\-h.
+
+\hypertarget{class_gpio_access_1_1_gpio_pin_a662d9f6e22d338e0b182b3220a42f25d}{\index{\-Gpio\-Access\-::\-Gpio\-Pin@{\-Gpio\-Access\-::\-Gpio\-Pin}!gpio\-Id@{gpio\-Id}}
+\index{gpio\-Id@{gpio\-Id}!GpioAccess::GpioPin@{\-Gpio\-Access\-::\-Gpio\-Pin}}
+\subsubsection[{gpio\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Gpio\-Access\-::\-Gpio\-Pin\-::gpio\-Id}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_gpio_access_1_1_gpio_pin_a662d9f6e22d338e0b182b3220a42f25d}
+gpio\-Id es un entero que contiene el identificador del puerto. 
+
+\-Definition at line 48 of file \-Gpio\-Pin.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/access/\-Gpio\-Pin.\-h\item 
+src/access/\-Gpio\-Pin.\-cpp\end{DoxyCompactItemize}

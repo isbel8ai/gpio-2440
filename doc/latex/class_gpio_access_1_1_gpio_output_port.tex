@@ -1,0 +1,105 @@
+\hypertarget{class_gpio_access_1_1_gpio_output_port}{\section{\-Gpio\-Access\-:\-:\-Gpio\-Output\-Port \-Class \-Reference}
+\label{class_gpio_access_1_1_gpio_output_port}\index{\-Gpio\-Access\-::\-Gpio\-Output\-Port@{\-Gpio\-Access\-::\-Gpio\-Output\-Port}}
+}
+
+
+{\ttfamily \#include $<$\-Gpio\-Output\-Port.\-h$>$}
+
+\-Inheritance diagram for \-Gpio\-Access\-:\-:\-Gpio\-Output\-Port\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gpio_access_1_1_gpio_output_port}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gpio_access_1_1_gpio_output_port_aad40d2242724e4b4a4ce664748b8232d}{\-Gpio\-Output\-Port} (int $\ast$bits\-Ids, int \hyperlink{class_gpio_access_1_1_gpio_port_a7708b465b3c98a32e592ee985c3dcf8b}{bit\-Count}, unsigned int init\-State=0)
+\item 
+void \hyperlink{class_gpio_access_1_1_gpio_output_port_abc3c17790a4a89df9dd73e0818dade4a}{write} (unsigned int state)
+\item 
+\hypertarget{class_gpio_access_1_1_gpio_output_port_a073ac74b839c691244f4c7575ed88344}{\hyperlink{class_gpio_access_1_1_gpio_output_pin}{\-Gpio\-Access\-::\-Gpio\-Output\-Pin} {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int pos)}\label{class_gpio_access_1_1_gpio_output_port_a073ac74b839c691244f4c7575ed88344}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gpio_access_1_1_gpio_output_pin}{\-Gpio\-Access\-::\-Gpio\-Output\-Pin} $\ast$ \hyperlink{class_gpio_access_1_1_gpio_output_port_a490b121699442f0a08beef308a867f1b}{output\-Bits}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_gpio_access_1_1_gpio_input_port}{\-Gpio\-Input\-Port} es la clase que define las funcionalidades de un bus de salida. 
+
+\-Definition at line 21 of file \-Gpio\-Output\-Port.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_output_port_aad40d2242724e4b4a4ce664748b8232d}{\index{\-Gpio\-Access\-::\-Gpio\-Output\-Port@{\-Gpio\-Access\-::\-Gpio\-Output\-Port}!\-Gpio\-Output\-Port@{\-Gpio\-Output\-Port}}
+\index{\-Gpio\-Output\-Port@{\-Gpio\-Output\-Port}!GpioAccess::GpioOutputPort@{\-Gpio\-Access\-::\-Gpio\-Output\-Port}}
+\subsubsection[{\-Gpio\-Output\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Gpio\-Access\-::\-Gpio\-Output\-Port\-::\-Gpio\-Output\-Port} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{bits\-Ids, }
+\item[{int}]{bit\-Count, }
+\item[{unsigned int}]{init\-State = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_gpio_access_1_1_gpio_output_port_aad40d2242724e4b4a4ce664748b8232d}
+\-Constructor de \hyperlink{class_gpio_access_1_1_gpio_output_port}{\-Gpio\-Output\-Port}. 
+\begin{DoxyParams}{\-Parameters}
+{\em bits\-Ids} & es un arreglo de enteros los cuales corresponden con los identificadores de los puertos que conforman el bus de salida. \\
+\hline
+{\em p\-Bit\-Count} & cantidad de bits del bus de salida. \\
+\hline
+{\em init\-State} & es un entero positivo que define el estado inicial del bus de salida. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em runtime\-\_\-error.} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\-Definition at line 8 of file \-Gpio\-Output\-Port.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_output_port_abc3c17790a4a89df9dd73e0818dade4a}{\index{\-Gpio\-Access\-::\-Gpio\-Output\-Port@{\-Gpio\-Access\-::\-Gpio\-Output\-Port}!write@{write}}
+\index{write@{write}!GpioAccess::GpioOutputPort@{\-Gpio\-Access\-::\-Gpio\-Output\-Port}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Gpio\-Access\-::\-Gpio\-Output\-Port\-::write} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{state}
+\end{DoxyParamCaption}
+)}}\label{class_gpio_access_1_1_gpio_output_port_abc3c17790a4a89df9dd73e0818dade4a}
+\-La función write establece el estado del bus de salida. 
+\begin{DoxyParams}{\-Parameters}
+{\em state} & es un entero positivo el cual se establecerá como salida del bus. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em runtime\-\_\-error.} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\-Definition at line 27 of file \-Gpio\-Output\-Port.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_gpio_access_1_1_gpio_output_port_a490b121699442f0a08beef308a867f1b}{\index{\-Gpio\-Access\-::\-Gpio\-Output\-Port@{\-Gpio\-Access\-::\-Gpio\-Output\-Port}!output\-Bits@{output\-Bits}}
+\index{output\-Bits@{output\-Bits}!GpioAccess::GpioOutputPort@{\-Gpio\-Access\-::\-Gpio\-Output\-Port}}
+\subsubsection[{output\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Gpio\-Access\-::\-Gpio\-Output\-Pin}$\ast$ {\bf \-Gpio\-Access\-::\-Gpio\-Output\-Port\-::output\-Bits}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_gpio_access_1_1_gpio_output_port_a490b121699442f0a08beef308a867f1b}
+output\-Bits es un arreglo \hyperlink{class_gpio_access_1_1_gpio_output_port}{\-Gpio\-Output\-Port} que almacena los puertos de salida que conforman el bus. 
+
+\-Definition at line 52 of file \-Gpio\-Output\-Port.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/access/\-Gpio\-Output\-Port.\-h\item 
+src/access/\-Gpio\-Output\-Port.\-cpp\end{DoxyCompactItemize}
