@@ -1,0 +1,3 @@
+[submodule "src/driver"]
+	path = src/driver
+	url = https://github.com/isbel8ai/gpio-2440-driver
